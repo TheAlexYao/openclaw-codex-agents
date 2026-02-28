@@ -1,6 +1,6 @@
 # openclaw-codex-agents
 
-An [OpenClaw](https://openclaw.ai) skill that lets your AI assistant orchestrate [OpenAI Codex](https://openai.com/index/codex/) coding agents — spawn background tasks, run parallel fixes, review PRs, and get notified when work is done.
+An [OpenClaw](https://openclaw.ai) skill that lets your AI assistant orchestrate [OpenAI Codex](https://github.com/openai/codex) coding agents — spawn background tasks, run parallel fixes, review PRs, and get notified when work is done.
 
 ## What it does
 
