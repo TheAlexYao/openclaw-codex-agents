@@ -12,9 +12,18 @@ An [OpenClaw](https://openclaw.ai) skill that lets your AI assistant orchestrate
 
 ## Prerequisites
 
-- [OpenClaw](https://docs.openclaw.ai) installed and configured
-- [Codex CLI](https://github.com/openai/codex) installed: `npm install -g @openai/codex`
-- Codex authenticated: `codex auth` (opens browser OAuth to your OpenAI account)
+1. **[OpenClaw](https://docs.openclaw.ai)** — installed and configured with at least one chat channel (Telegram, Discord, etc.)
+2. **[OpenAI Codex CLI](https://github.com/openai/codex)** — the coding agent this skill orchestrates
+   ```bash
+   npm install -g @openai/codex
+   ```
+3. **Codex authentication** — sign in to your OpenAI account (requires an OpenAI plan that includes Codex)
+   ```bash
+   codex auth
+   ```
+   This opens a browser for OAuth. One-time setup.
+4. **Node.js 18+** — required by both OpenClaw and Codex CLI
+5. **Git** — Codex requires a git repository to run in
 
 ## Install
 
@@ -22,7 +31,7 @@ Copy the `codex-agents/` folder into your OpenClaw skills directory:
 
 ```bash
 # Clone this repo
-git clone https://github.com/alymatcha/openclaw-codex-agents.git
+git clone https://github.com/TheAlexYao/openclaw-codex-agents.git
 
 # Copy skill to your OpenClaw skills directory
 cp -r openclaw-codex-agents/codex-agents ~/.openclaw/skills/
