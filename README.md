@@ -63,6 +63,21 @@ The skill teaches your OpenClaw assistant how to:
 | `--full-auto` | Sandboxed, auto-approves file changes (recommended) |
 | `--yolo` | No sandbox, no approvals (fast but risky) |
 
+## Configure your assistant to use Codex
+
+By default, your OpenClaw assistant (Claude, etc.) may write code directly instead of delegating to Codex. To make it reach for Codex automatically, add this to your `AGENTS.md` file in your OpenClaw workspace:
+
+```markdown
+## Coding Tasks
+- For any code building, fixing, refactoring, or PR review, use the codex-agents skill.
+- Don't write code yourself — delegate to Codex.
+- Default to `codex exec --full-auto` for all tasks.
+- Only use `--yolo` if I explicitly ask for it.
+- Always verify the output before telling me it's done.
+```
+
+Your `AGENTS.md` lives in the workspace directory configured for your OpenClaw agent (usually `~/.openclaw/workspace/` or wherever you pointed it during setup). This file shapes how your assistant behaves — think of it as standing instructions.
+
 ## License
 
 MIT
